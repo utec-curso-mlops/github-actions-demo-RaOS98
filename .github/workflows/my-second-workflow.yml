@@ -15,6 +15,7 @@ jobs:
       - name: Test Code
         run: echo "Testing code for model"
   second-job:
+    needs: first-job
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
